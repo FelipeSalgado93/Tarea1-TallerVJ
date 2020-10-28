@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/towerRound_bottomB.obj-3c2fed6ee655eaadaf0b4a135a1e657f.mesh"
+
+[deps]
+
+files=[ "res://.import/towerRound_bottomB.obj-3c2fed6ee655eaadaf0b4a135a1e657f.mesh" ]
+
+source_file="res://Torres/towerRound_bottomB.obj"
+dest_files=[ "res://.import/towerRound_bottomB.obj-3c2fed6ee655eaadaf0b4a135a1e657f.mesh", "res://.import/towerRound_bottomB.obj-3c2fed6ee655eaadaf0b4a135a1e657f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

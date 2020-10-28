@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tile_treeQuad.obj-2a5645eef9fedd8700c1bbbaa331b61f.mesh"
+
+[deps]
+
+files=[ "res://.import/tile_treeQuad.obj-2a5645eef9fedd8700c1bbbaa331b61f.mesh" ]
+
+source_file="res://tower-defense-kit-1/Models/OBJ format/tile_treeQuad.obj"
+dest_files=[ "res://.import/tile_treeQuad.obj-2a5645eef9fedd8700c1bbbaa331b61f.mesh", "res://.import/tile_treeQuad.obj-2a5645eef9fedd8700c1bbbaa331b61f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

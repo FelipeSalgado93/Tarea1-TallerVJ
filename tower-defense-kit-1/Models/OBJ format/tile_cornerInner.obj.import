@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tile_cornerInner.obj-0e9a94337328f337bd4a960a0bd9a71e.mesh"
+
+[deps]
+
+files=[ "res://.import/tile_cornerInner.obj-0e9a94337328f337bd4a960a0bd9a71e.mesh" ]
+
+source_file="res://tower-defense-kit-1/Models/OBJ format/tile_cornerInner.obj"
+dest_files=[ "res://.import/tile_cornerInner.obj-0e9a94337328f337bd4a960a0bd9a71e.mesh", "res://.import/tile_cornerInner.obj-0e9a94337328f337bd4a960a0bd9a71e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/towerSquare_roofA.obj-d059ff2dfab119e8c51807c33007de72.mesh"
+
+[deps]
+
+files=[ "res://.import/towerSquare_roofA.obj-d059ff2dfab119e8c51807c33007de72.mesh" ]
+
+source_file="res://Torres/towerSquare_roofA.obj"
+dest_files=[ "res://.import/towerSquare_roofA.obj-d059ff2dfab119e8c51807c33007de72.mesh", "res://.import/towerSquare_roofA.obj-d059ff2dfab119e8c51807c33007de72.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

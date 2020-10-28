@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/detail_treeLarge.obj-5510cb532e9333f11dcfbb3e3a86578d.mesh"
+
+[deps]
+
+files=[ "res://.import/detail_treeLarge.obj-5510cb532e9333f11dcfbb3e3a86578d.mesh" ]
+
+source_file="res://tower-defense-kit-1/Models/OBJ format/detail_treeLarge.obj"
+dest_files=[ "res://.import/detail_treeLarge.obj-5510cb532e9333f11dcfbb3e3a86578d.mesh", "res://.import/detail_treeLarge.obj-5510cb532e9333f11dcfbb3e3a86578d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

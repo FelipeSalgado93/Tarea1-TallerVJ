@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tile_endRoundSpawn.obj-dcd5ebc7a0aa3f08e8b76f52546cd865.mesh"
+
+[deps]
+
+files=[ "res://.import/tile_endRoundSpawn.obj-dcd5ebc7a0aa3f08e8b76f52546cd865.mesh" ]
+
+source_file="res://tower-defense-kit-1/Models/OBJ format/tile_endRoundSpawn.obj"
+dest_files=[ "res://.import/tile_endRoundSpawn.obj-dcd5ebc7a0aa3f08e8b76f52546cd865.mesh", "res://.import/tile_endRoundSpawn.obj-dcd5ebc7a0aa3f08e8b76f52546cd865.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

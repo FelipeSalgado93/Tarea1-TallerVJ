@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tile_riverStraight.obj-b6c907000a0fb24fd14c1505863446ae.mesh"
+
+[deps]
+
+files=[ "res://.import/tile_riverStraight.obj-b6c907000a0fb24fd14c1505863446ae.mesh" ]
+
+source_file="res://tower-defense-kit-1/Models/OBJ format/tile_riverStraight.obj"
+dest_files=[ "res://.import/tile_riverStraight.obj-b6c907000a0fb24fd14c1505863446ae.mesh", "res://.import/tile_riverStraight.obj-b6c907000a0fb24fd14c1505863446ae.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

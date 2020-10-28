@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tile_crossing.obj-6eb9ad38f63160c628bc4e8b43c5313e.mesh"
+
+[deps]
+
+files=[ "res://.import/tile_crossing.obj-6eb9ad38f63160c628bc4e8b43c5313e.mesh" ]
+
+source_file="res://tower-defense-kit-1/Models/OBJ format/tile_crossing.obj"
+dest_files=[ "res://.import/tile_crossing.obj-6eb9ad38f63160c628bc4e8b43c5313e.mesh", "res://.import/tile_crossing.obj-6eb9ad38f63160c628bc4e8b43c5313e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

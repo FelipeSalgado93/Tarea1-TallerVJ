@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/snow_tile.obj-736ec5dbdeb8510dbca738543f1801ae.mesh"
+
+[deps]
+
+files=[ "res://.import/snow_tile.obj-736ec5dbdeb8510dbca738543f1801ae.mesh" ]
+
+source_file="res://tower-defense-kit-1/Models/OBJ format/snow_tile.obj"
+dest_files=[ "res://.import/snow_tile.obj-736ec5dbdeb8510dbca738543f1801ae.mesh", "res://.import/snow_tile.obj-736ec5dbdeb8510dbca738543f1801ae.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

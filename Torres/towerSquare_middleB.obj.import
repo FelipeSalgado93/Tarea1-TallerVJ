@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/towerSquare_middleB.obj-cde6aed0342f452783ad652f14881c43.mesh"
+
+[deps]
+
+files=[ "res://.import/towerSquare_middleB.obj-cde6aed0342f452783ad652f14881c43.mesh" ]
+
+source_file="res://Torres/towerSquare_middleB.obj"
+dest_files=[ "res://.import/towerSquare_middleB.obj-cde6aed0342f452783ad652f14881c43.mesh", "res://.import/towerSquare_middleB.obj-cde6aed0342f452783ad652f14881c43.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

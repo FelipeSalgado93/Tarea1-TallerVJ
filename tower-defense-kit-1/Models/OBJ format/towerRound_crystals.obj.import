@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/towerRound_crystals.obj-5d580e9985dc2a7864a995153cab178f.mesh"
+
+[deps]
+
+files=[ "res://.import/towerRound_crystals.obj-5d580e9985dc2a7864a995153cab178f.mesh" ]
+
+source_file="res://tower-defense-kit-1/Models/OBJ format/towerRound_crystals.obj"
+dest_files=[ "res://.import/towerRound_crystals.obj-5d580e9985dc2a7864a995153cab178f.mesh", "res://.import/towerRound_crystals.obj-5d580e9985dc2a7864a995153cab178f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

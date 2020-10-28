@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/weapon_catapult.obj-a64cd6755e9bce38c15fac6aac681300.mesh"
+
+[deps]
+
+files=[ "res://.import/weapon_catapult.obj-a64cd6755e9bce38c15fac6aac681300.mesh" ]
+
+source_file="res://Torres/weapon_catapult.obj"
+dest_files=[ "res://.import/weapon_catapult.obj-a64cd6755e9bce38c15fac6aac681300.mesh", "res://.import/weapon_catapult.obj-a64cd6755e9bce38c15fac6aac681300.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

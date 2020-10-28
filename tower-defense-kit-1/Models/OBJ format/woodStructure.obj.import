@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/woodStructure.obj-88ae8d2f2386399422992b70cd5473db.mesh"
+
+[deps]
+
+files=[ "res://.import/woodStructure.obj-88ae8d2f2386399422992b70cd5473db.mesh" ]
+
+source_file="res://tower-defense-kit-1/Models/OBJ format/woodStructure.obj"
+dest_files=[ "res://.import/woodStructure.obj-88ae8d2f2386399422992b70cd5473db.mesh", "res://.import/woodStructure.obj-88ae8d2f2386399422992b70cd5473db.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
