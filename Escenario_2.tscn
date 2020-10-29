@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Torres/towerRound_sampleA.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Torres/towerRound_bottomA.obj" type="ArrayMesh" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://Torres/towerRound_bottomB.obj" type="ArrayMesh" id=14]
 [ext_resource path="res://MallaMapa.meshlib" type="MeshLibrary" id=15]
 [ext_resource path="res://tower-defense-kit-1/Models/OBJ format/towerSquare_sampleB.obj" type="ArrayMesh" id=16]
+[ext_resource path="res://tower-defense-kit-1/Models/OBJ format/towerSquare_sampleC.obj" type="ArrayMesh" id=17]
 
 [sub_resource type="Skin" id=1]
 
@@ -150,6 +151,13 @@ polygon = PoolVector2Array( 0, 0 )
 [node name="towerSquare_sampleB" type="MeshInstance" parent="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.36607, -0.198543, -1.24606 )
 mesh = ExtResource( 16 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="towerSquare_sampleC" type="MeshInstance" parent="KinematicBody/towerSquare_sampleB"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.7067, 0.161493, -8.44928 )
+mesh = ExtResource( 17 )
 material/0 = null
 material/1 = null
 material/2 = null
