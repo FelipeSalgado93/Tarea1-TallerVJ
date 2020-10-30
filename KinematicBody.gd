@@ -1,5 +1,10 @@
 extends KinematicBody
 #
+
+		
+
+	
+	
 #var target
 #var path = []
 #var nav
