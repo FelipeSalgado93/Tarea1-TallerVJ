@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://TextureProgress.gd" type="Script" id=1]
+[ext_resource path="res://barHorizontal_green_mid 200.png" type="Texture" id=2]
+
+[node name="progreso2d" type="TextureProgress"]
+margin_right = 200.0
+margin_bottom = 26.0
+max_value = 10.0
+value = 10.0
+texture_progress = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="gui_input" from="." to="." method="_on_progreso2d_gui_input"]
