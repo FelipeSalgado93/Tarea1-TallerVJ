@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Torre1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://legoblin.tscn" type="PackedScene" id=2]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="legoblin" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1.62921e-07, 0, 0.999999, 0, 0.999999, 0, -0.999999, 0, -1.62921e-07, 0, 0, 1 )
+
+[node name="Torre1" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.905879, 0, -0.423535, 0, 1, 0, 0.423535, 0, 0.905879, -1.32191, 0, 2.39602 )
+current = true

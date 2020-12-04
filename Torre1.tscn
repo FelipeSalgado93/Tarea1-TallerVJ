@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://tower-defense-kit-1/Models/OBJ format/towerSquare_sampleB.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Torre1.gd" type="Script" id=2]
+
+[sub_resource type="CylinderShape" id=4]
+radius = 2.0
+
+[node name="Torre1" type="KinematicBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.57065, 0.222, 7.50848 )
+script = ExtResource( 2 )
+
+[node name="Area" type="Area" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="Area"]
+shape = SubResource( 4 )
+
+[node name="CollisionPolygon" type="CollisionPolygon" parent="."]
+polygon = PoolVector2Array( 0, 0 )
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="towerSquare_sampleB2" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
