@@ -3,7 +3,7 @@ var health=10
 var max_health=10
 
 func jaja(event):
-	if event.is_action_pressed("ui_focus_next"):
+	if event.is_action_pressed("bajarVida"):
 		health -= 1
 		$Sprite3D.update(health, max_health)
 		if health <= 0:
@@ -47,3 +47,8 @@ func _on_legoblin_input_event(camera, event, click_position, click_normal, shape
 			$Sprite3D.update(health, max_health)
 			if health <= 0:
 				queue_free()
+	elif event.is_action_pressed("bajarVida"):
+		health -= 1
+		$Sprite3D.update(health, max_health)
+		if health <= 0:
+			queue_free()
