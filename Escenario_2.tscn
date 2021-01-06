@@ -32,7 +32,7 @@ script = ExtResource( 7 )
 mesh_library = ExtResource( 15 )
 cell_center_y = false
 data = {
-"cells": PoolIntArray( 65533, 65535, 537526275 )
+"cells": PoolIntArray( 65533, 65535, 655363 )
 }
 __meta__ = {
 "_editor_clip_": 0
