@@ -1,6 +1,5 @@
 extends Control
-
-
+var escena=preload("res://Escenario_2.tscn")
 var scene_path_to_load
 func _ready():
 	for button in $Menu/Centro/Botones.get_children():

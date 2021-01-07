@@ -5,8 +5,10 @@
 [node name="CreditosEscena" instance=ExtResource( 1 )]
 
 [node name="VBoxContainer" parent="CenterContainer" index="0"]
-margin_left = 466.0
-margin_right = 814.0
+margin_left = 338.0
+margin_top = 247.0
+margin_right = 686.0
+margin_bottom = 353.0
 
 [node name="Label" parent="CenterContainer/VBoxContainer" index="0"]
 margin_right = 348.0
