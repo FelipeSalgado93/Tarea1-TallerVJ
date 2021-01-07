@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Tarea1"
-run/main_scene="res://Escenario_2.tscn"
+run/main_scene="res://Menu_Principal.tscn"
 config/icon="res://icon.png"
 
 [display]

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://jugando.gd" type="Script" id=1]
+[ext_resource path="res://The Protagonist.ogg" type="AudioStream" id=2]
+
+[node name="BGM" type="AudioStreamPlayer"]
+stream = ExtResource( 2 )
+volume_db = -5.048
+autoplay = true
+script = ExtResource( 1 )

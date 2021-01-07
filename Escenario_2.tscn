@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://tower-defense-kit-1/Models/OBJ format/towerRound_sampleA.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://tower-defense-kit-1/Models/OBJ format/towerRound_sampleB.obj" type="ArrayMesh" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Escenario_2.gd" type="Script" id=7]
 [ext_resource path="res://MovimientoCamara.gd" type="Script" id=8]
 [ext_resource path="res://ProgressBar.tscn" type="PackedScene" id=9]
+[ext_resource path="res://BGM.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Sprite3D.tscn" type="PackedScene" id=11]
 [ext_resource path="res://MallaMapa.meshlib" type="MeshLibrary" id=15]
 [ext_resource path="res://tower-defense-kit-1/Models/OBJ format/towerSquare_sampleB.obj" type="ArrayMesh" id=16]
@@ -32,7 +33,7 @@ script = ExtResource( 7 )
 mesh_library = ExtResource( 15 )
 cell_center_y = false
 data = {
-"cells": PoolIntArray( 65533, 65535, 655363 )
+"cells": PoolIntArray( 65533, 65535, 537526275 )
 }
 __meta__ = {
 "_editor_clip_": 0
@@ -145,3 +146,5 @@ script = ExtResource( 8 )
 visible = false
 
 [node name="Sprite3D" parent="." instance=ExtResource( 11 )]
+
+[node name="BGM" parent="." instance=ExtResource( 10 )]

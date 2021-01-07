@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/The Protagonist.ogg-b23ea74b8db29eb37b1c5d6d59f7914c.oggstr"
+
+[deps]
+
+source_file="res://The Protagonist.ogg"
+dest_files=[ "res://.import/The Protagonist.ogg-b23ea74b8db29eb37b1c5d6d59f7914c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

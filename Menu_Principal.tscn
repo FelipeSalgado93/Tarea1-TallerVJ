@@ -64,6 +64,7 @@ margin_bottom = 140.0
 margin_top = 160.0
 margin_right = 518.0
 margin_bottom = 220.0
+scene_to_load = "res://godot-credits-master/GodotCredits.tscn"
 
 [node name="CenterContainer" type="CenterContainer" parent="Menu/Centro"]
 margin_left = 522.0

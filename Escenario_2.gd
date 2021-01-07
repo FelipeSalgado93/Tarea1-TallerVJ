@@ -2,6 +2,7 @@ extends Spatial
 var scene = preload("res://legoblin.tscn")
 var delta=10
 
+
 #func _input(event):
 	#if event.is_action_released("jump"):
 		#var spawned_instance = scene.instance()
@@ -25,11 +26,6 @@ var delta=10
 # var a = 2
 # var b = "text"
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass
-	
 
 
 
