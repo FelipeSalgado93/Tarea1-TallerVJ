@@ -16,13 +16,8 @@ _global_script_class_icons={
 [application]
 
 config/name="Tarea1"
-run/main_scene="res://Menu_Principal.tscn"
+run/main_scene="res://Escenario_2.tscn"
 config/icon="res://icon.png"
-
-[display]
-
-window/size/width=1280
-window/size/height=720
 
 [input]
 
