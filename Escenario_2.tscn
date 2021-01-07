@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://tower-defense-kit-1/Models/OBJ format/towerRound_sampleA.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://tower-defense-kit-1/Models/OBJ format/towerRound_sampleB.obj" type="ArrayMesh" id=2]
@@ -12,13 +12,16 @@
 [ext_resource path="res://towerSquare_sampleB2.gd" type="Script" id=10]
 [ext_resource path="res://Sprite3D.tscn" type="PackedScene" id=11]
 [ext_resource path="res://CollisionShape.gd" type="Script" id=12]
+[ext_resource path="res://goblinoo-removebg-preview.png" type="Texture" id=13]
+[ext_resource path="res://Contador.gd" type="Script" id=14]
 [ext_resource path="res://MallaMapa.meshlib" type="MeshLibrary" id=15]
 [ext_resource path="res://tower-defense-kit-1/Models/OBJ format/towerSquare_sampleB.obj" type="ArrayMesh" id=16]
 [ext_resource path="res://tower-defense-kit-1/Models/OBJ format/towerSquare_sampleC.obj" type="ArrayMesh" id=17]
+[ext_resource path="res://legoblin.tscn" type="PackedScene" id=18]
 
-[sub_resource type="CylinderShape" id=2]
+[sub_resource type="CylinderShape" id=1]
 
-[sub_resource type="Curve3D" id=1]
+[sub_resource type="Curve3D" id=2]
 _data = {
 "points": PoolVector3Array( 0, 0, 0, 0, 0, 0, 8.11081, 0.609595, 6.52191, 0, 0, 0, 0, 0, 0, 6.49189, 0.645782, 6.56514, 0, 0, 0, 0, 0, 0, 6.49189, 0.645782, 7.66378, 0, 0, 0, 0, 0, 0, 6.33494, 0.645782, 8.3962, 0, 0, 0, 0, 0, 0, 0.815579, 0.645782, 8.47468, 0, 0, 0, 0, 0, 0, 0.344733, 0.645782, 7.63762, 0, 0, 0, 0, 0, 0, -0.126113, 0.645782, 7.50683, 0, 0, 0, 0, 0, 0, -0.623115, 0.645782, 7.50683, 0, 0, 0, 0, 0, 0, -1.46017, 0.645782, 7.24525, 0, 0, 0, 0, 0, 0, -1.48633, 0.645782, 4.70791, 0, 0, 0, 0, 0, 0, -1.09396, 0.645782, 4.42017, 0, 0, 0, 0, 0, 0, -0.0214782, 0.645782, 4.42017, 0, 0, 0, 0, 0, 0, 1.52185, 0.645782, 4.26322, 0, 0, 0, 0, 0, 0, 1.55423, 0.645782, 1.71737, 0, 0, 0, 0, 0, 0, 4.41666, 0.645782, 1.38436, 0, 0, 0, 0, 0, 0, 4.70136, 0.645782, -3.31323, 0, 0, 0, 0, 0, 0, 6.44517, 0.645782, -3.66911, 0, 0, 0, 0, 0, 0, 6.46285, 0.645782, -6.28879, 0, 0, 0, 0, 0, 0, 4.94782, 0.645782, -6.4864, 0, 0, 0, 0, 0, 0, 3.49867, 0.645782, -6.4864, 0, 0, 0, 0, 0, 0, 2.04952, 0.645782, -6.61814, 0, 0, 0, 0, 0, 0, 1.39081, 0.645782, -7.34272, 0, 0, 0, 0, 0, 0, 1.32495, 0.645782, -8.33078, 0, 0, 0, 0, 0, 0, 0.00753254, 0.645782, -8.59426, 0, 0, 0, 0, 0, 0, -1.96859, 0.645782, -8.59426, 0, 0, 0, 0, 0, 0, -3.94471, 0.645782, -8.59426, 0, 0, 0, 0, 0, 0, -5.85495, 0.645782, -8.59426, 0, 0, 0, 0, 0, 0, -6.51366, 0.645782, -8.00142, 0, 0, 0, 0, 0, 0, -6.6454, 0.645782, -6.28879, 0, 0, 0, 0, 0, 0, -5.85495, 0.645782, -5.56421, 0, 0, 0, 0, 0, 0, -4.8669, 0.645782, -5.49834, 0, 0, 0, 0, 0, 0, -4.53754, 0.645782, -4.70789, 0, 0, 0, 0, 0, 0, -4.60341, 0.645782, -3.65396, 0, 0, 0, 0, 0, 0, -4.60341, 0.645782, -2.0072, 0, 0, 0, 0, 0, 0, -4.93276, 0.645782, -0.821526, 0, 0, 0, 0, 0, 0, -6.31605, 0.645782, -0.492173, 0, 0, 0, 0, 0, 0, -8.16043, 0.645782, -0.558044, 0, 0, 0, 0, 0, 0, -9.54371, 0.645782, -0.558044 ),
 "tilts": PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 )
@@ -63,7 +66,7 @@ script = ExtResource( 10 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Torres/towerSquare_sampleB2/Area"]
 transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 script = ExtResource( 12 )
 
 [node name="towerSquare_sampleB8" type="MeshInstance" parent="Torres"]
@@ -78,7 +81,7 @@ script = ExtResource( 10 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Torres/towerSquare_sampleB8/Area"]
 transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 script = ExtResource( 12 )
 
 [node name="towerSquare_sampleB7" type="MeshInstance" parent="Torres"]
@@ -93,7 +96,7 @@ script = ExtResource( 10 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Torres/towerSquare_sampleB7/Area"]
 transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 script = ExtResource( 12 )
 
 [node name="towerSquare_sampleB6" type="MeshInstance" parent="Torres"]
@@ -108,7 +111,7 @@ script = ExtResource( 10 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Torres/towerSquare_sampleB6/Area"]
 transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 script = ExtResource( 12 )
 
 [node name="towerSquare_sampleB5" type="MeshInstance" parent="Torres"]
@@ -123,7 +126,7 @@ script = ExtResource( 10 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Torres/towerSquare_sampleB5/Area"]
 transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 script = ExtResource( 12 )
 
 [node name="towerSquare_sampleB4" type="MeshInstance" parent="Torres"]
@@ -138,7 +141,7 @@ script = ExtResource( 10 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Torres/towerSquare_sampleB4/Area"]
 transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 script = ExtResource( 12 )
 
 [node name="towerSquare_sampleB3" type="MeshInstance" parent="Torres"]
@@ -153,7 +156,7 @@ script = ExtResource( 10 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Torres/towerSquare_sampleB3/Area"]
 transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 script = ExtResource( 12 )
 
 [node name="Mapa" type="Spatial" parent="."]
@@ -162,7 +165,7 @@ script = ExtResource( 12 )
 
 [node name="Path" type="Path" parent="Mapa"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0839434, -0.389962, 0 )
-curve = SubResource( 1 )
+curve = SubResource( 2 )
 script = ExtResource( 6 )
 
 [node name="CharacterFollower" parent="Mapa/Path" instance=ExtResource( 5 )]
@@ -187,6 +190,40 @@ script = ExtResource( 8 )
 visible = false
 
 [node name="Sprite3D" parent="." instance=ExtResource( 11 )]
+
+[node name="Control" type="Control" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Control"]
+position = Vector2( 126.099, 64.9759 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 13 )
+
+[node name="Label" type="Label" parent="Control"]
+margin_left = 210.096
+margin_top = 40.1712
+margin_right = 295.096
+margin_bottom = 116.171
+text = "X"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Contador" type="Label" parent="Control"]
+margin_left = 260.0
+margin_top = 37.0
+margin_right = 351.0
+margin_bottom = 103.0
+script = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="legoblin" parent="." instance=ExtResource( 18 )]
 [connection signal="body_entered" from="Torres/towerSquare_sampleB2/Area" to="Torres/towerSquare_sampleB2" method="_on_Area_body_entered"]
 [connection signal="body_exited" from="Torres/towerSquare_sampleB2/Area" to="Torres/towerSquare_sampleB2" method="_on_Area_body_exited"]
 [connection signal="body_entered" from="Torres/towerSquare_sampleB8/Area" to="Torres/towerSquare_sampleB8" method="_on_Area_body_entered"]

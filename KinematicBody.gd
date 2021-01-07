@@ -4,7 +4,7 @@ var health=10
 var max_health=10
 var disparo = false
 var life_time = 1
-
+signal Muerte
 func jaja(event):
 	if event.is_action_pressed("bajarVida"):
 		health -= 1
@@ -33,6 +33,15 @@ func _on_KinematicBody_body_entered(body):
 		health -= dam
 		$Sprite3D.update(health, max_health)
 		if health <= 0:
+			emit_signal("Muerte")
+			print("He muerto")
 			self.hide()
+			
 			#yield(get_tree().create_timer(life_time), "timeout")
 			#queue_free()
+
+
+
+
+
+
