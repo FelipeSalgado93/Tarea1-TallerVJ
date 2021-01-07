@@ -1,6 +1,9 @@
-extends KinematicBody
+extends RigidBody
+
 var health=10
 var max_health=10
+var disparo = false
+var life_time = 1
 
 func jaja(event):
 	if event.is_action_pressed("bajarVida"):
@@ -8,36 +11,6 @@ func jaja(event):
 		$Sprite3D.update(health, max_health)
 		if health <= 0:
 			queue_free()
-
-		
-
-	
-	
-#var target
-#var path = []
-#var nav
-#
-#
-#func _ready():
-#	nav=get_parent()
-#	target=get_tree().get_nodes_in_group("objetivo")[0]
-#	generar_path()
-#
-#
-#func _physics_process(delta):
-#	delta+=1
-#	if(path.size()>0):
-#		var d=global_transform.origin.distance_to(path[0])
-#		if (d>5):
-#			var vel = path[0]-global_transform.origin
-#			translation+=vel
-#		else:
-#			path.remove()
-#func generar_path():
-#	path=nav.get_simple_path(global_transform.origin,target.global_transform.origin)
-#	print(path)
-
-
 
 
 func _on_legoblin_input_event(camera, event, click_position, click_normal, shape_idx):
@@ -52,3 +25,14 @@ func _on_legoblin_input_event(camera, event, click_position, click_normal, shape
 		$Sprite3D.update(health, max_health)
 		if health <= 0:
 			queue_free()
+
+func _on_KinematicBody_body_entered(body):
+	if body.disparo == true:
+		var dam = body.damage
+		body.queue_free()
+		health -= dam
+		$Sprite3D.update(health, max_health)
+		if health <= 0:
+			self.hide()
+			#yield(get_tree().create_timer(life_time), "timeout")
+			#queue_free()

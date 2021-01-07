@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://tower-defense-kit-1/Models/OBJ format/towerRound_sampleA.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://tower-defense-kit-1/Models/OBJ format/towerRound_sampleB.obj" type="ArrayMesh" id=2]
@@ -9,17 +9,16 @@
 [ext_resource path="res://Escenario_2.gd" type="Script" id=7]
 [ext_resource path="res://MovimientoCamara.gd" type="Script" id=8]
 [ext_resource path="res://ProgressBar.tscn" type="PackedScene" id=9]
+[ext_resource path="res://towerSquare_sampleB2.gd" type="Script" id=10]
 [ext_resource path="res://Sprite3D.tscn" type="PackedScene" id=11]
+[ext_resource path="res://CollisionShape.gd" type="Script" id=12]
 [ext_resource path="res://MallaMapa.meshlib" type="MeshLibrary" id=15]
 [ext_resource path="res://tower-defense-kit-1/Models/OBJ format/towerSquare_sampleB.obj" type="ArrayMesh" id=16]
 [ext_resource path="res://tower-defense-kit-1/Models/OBJ format/towerSquare_sampleC.obj" type="ArrayMesh" id=17]
 
-[sub_resource type="BoxShape" id=1]
-extents = Vector3( 2.90625, 0.001, 0.612256 )
+[sub_resource type="CylinderShape" id=2]
 
-[sub_resource type="BoxShape" id=2]
-
-[sub_resource type="Curve3D" id=3]
+[sub_resource type="Curve3D" id=1]
 _data = {
 "points": PoolVector3Array( 0, 0, 0, 0, 0, 0, 8.11081, 0.609595, 6.52191, 0, 0, 0, 0, 0, 0, 6.49189, 0.645782, 6.56514, 0, 0, 0, 0, 0, 0, 6.49189, 0.645782, 7.66378, 0, 0, 0, 0, 0, 0, 6.33494, 0.645782, 8.3962, 0, 0, 0, 0, 0, 0, 0.815579, 0.645782, 8.47468, 0, 0, 0, 0, 0, 0, 0.344733, 0.645782, 7.63762, 0, 0, 0, 0, 0, 0, -0.126113, 0.645782, 7.50683, 0, 0, 0, 0, 0, 0, -0.623115, 0.645782, 7.50683, 0, 0, 0, 0, 0, 0, -1.46017, 0.645782, 7.24525, 0, 0, 0, 0, 0, 0, -1.48633, 0.645782, 4.70791, 0, 0, 0, 0, 0, 0, -1.09396, 0.645782, 4.42017, 0, 0, 0, 0, 0, 0, -0.0214782, 0.645782, 4.42017, 0, 0, 0, 0, 0, 0, 1.52185, 0.645782, 4.26322, 0, 0, 0, 0, 0, 0, 1.55423, 0.645782, 1.71737, 0, 0, 0, 0, 0, 0, 4.41666, 0.645782, 1.38436, 0, 0, 0, 0, 0, 0, 4.70136, 0.645782, -3.31323, 0, 0, 0, 0, 0, 0, 6.44517, 0.645782, -3.66911, 0, 0, 0, 0, 0, 0, 6.46285, 0.645782, -6.28879, 0, 0, 0, 0, 0, 0, 4.94782, 0.645782, -6.4864, 0, 0, 0, 0, 0, 0, 3.49867, 0.645782, -6.4864, 0, 0, 0, 0, 0, 0, 2.04952, 0.645782, -6.61814, 0, 0, 0, 0, 0, 0, 1.39081, 0.645782, -7.34272, 0, 0, 0, 0, 0, 0, 1.32495, 0.645782, -8.33078, 0, 0, 0, 0, 0, 0, 0.00753254, 0.645782, -8.59426, 0, 0, 0, 0, 0, 0, -1.96859, 0.645782, -8.59426, 0, 0, 0, 0, 0, 0, -3.94471, 0.645782, -8.59426, 0, 0, 0, 0, 0, 0, -5.85495, 0.645782, -8.59426, 0, 0, 0, 0, 0, 0, -6.51366, 0.645782, -8.00142, 0, 0, 0, 0, 0, 0, -6.6454, 0.645782, -6.28879, 0, 0, 0, 0, 0, 0, -5.85495, 0.645782, -5.56421, 0, 0, 0, 0, 0, 0, -4.8669, 0.645782, -5.49834, 0, 0, 0, 0, 0, 0, -4.53754, 0.645782, -4.70789, 0, 0, 0, 0, 0, 0, -4.60341, 0.645782, -3.65396, 0, 0, 0, 0, 0, 0, -4.60341, 0.645782, -2.0072, 0, 0, 0, 0, 0, 0, -4.93276, 0.645782, -0.821526, 0, 0, 0, 0, 0, 0, -6.31605, 0.645782, -0.492173, 0, 0, 0, 0, 0, 0, -8.16043, 0.645782, -0.558044, 0, 0, 0, 0, 0, 0, -9.54371, 0.645782, -0.558044 ),
 "tilts": PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 )
@@ -52,75 +51,118 @@ __meta__ = {
 
 [node name="Torres" type="Spatial" parent="."]
 
-[node name="towerSquare_sampleC" type="MeshInstance" parent="Torres"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.60543, 0.259025, -7.48263 )
-mesh = ExtResource( 17 )
-material/0 = null
-material/1 = null
-material/2 = null
-
-[node name="towerSquare_sampleD" type="MeshInstance" parent="Torres"]
-transform = Transform( 0.999735, 0.00725122, -0.0219029, -0.00725752, 0.999975, -0.000208299, 0.0219008, 0.000367204, 0.999761, 2.4813, 0.377981, -7.47328 )
-mesh = ExtResource( 3 )
-material/0 = null
-material/1 = null
-material/2 = null
-
-[node name="towerSquare_sampleB" type="MeshInstance" parent="Torres/towerSquare_sampleD"]
-transform = Transform( 0.998719, 1.25309e-06, 0.0505741, -1.98313e-05, 0.999999, 0.000366785, -0.0505741, -0.000367319, 0.998719, -2.74926, -0.195244, 12.9367 )
-mesh = ExtResource( 16 )
-material/0 = null
-material/1 = null
-material/2 = null
-
-[node name="towerSquare_sampleE" type="MeshInstance" parent="Torres"]
-transform = Transform( 0.999736, 0.00725122, -0.0219029, -0.00725753, 0.999976, -0.000208299, 0.0219009, 0.000367204, 0.999762, -7.52301, 0.187593, -1.61345 )
-mesh = ExtResource( 4 )
-material/0 = null
-material/1 = null
-material/2 = null
-
-[node name="towerRound_sampleA" type="MeshInstance" parent="Torres"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.55614, 0.221675, -1.53469 )
-mesh = ExtResource( 1 )
-material/0 = null
-material/1 = null
-material/2 = null
-
-[node name="towerRound_sampleB" type="MeshInstance" parent="Torres"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45957, 0.201797, 0.681192 )
-mesh = ExtResource( 2 )
-material/0 = null
-material/1 = null
-material/2 = null
-
 [node name="towerSquare_sampleB2" type="MeshInstance" parent="Torres"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.215, 7.5 )
 mesh = ExtResource( 16 )
 material/0 = null
 material/1 = null
 material/2 = null
+script = ExtResource( 10 )
+
+[node name="Area" type="Area" parent="Torres/towerSquare_sampleB2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Torres/towerSquare_sampleB2/Area"]
+transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0 )
+shape = SubResource( 2 )
+script = ExtResource( 12 )
+
+[node name="towerSquare_sampleB8" type="MeshInstance" parent="Torres"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.605, 0.254, -7.483 )
+mesh = ExtResource( 17 )
+material/0 = null
+material/1 = null
+material/2 = null
+script = ExtResource( 10 )
+
+[node name="Area" type="Area" parent="Torres/towerSquare_sampleB8"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Torres/towerSquare_sampleB8/Area"]
+transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0 )
+shape = SubResource( 2 )
+script = ExtResource( 12 )
+
+[node name="towerSquare_sampleB7" type="MeshInstance" parent="Torres"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.481, 0.378, -7.473 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+script = ExtResource( 10 )
+
+[node name="Area" type="Area" parent="Torres/towerSquare_sampleB7"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Torres/towerSquare_sampleB7/Area"]
+transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0 )
+shape = SubResource( 2 )
+script = ExtResource( 12 )
+
+[node name="towerSquare_sampleB6" type="MeshInstance" parent="Torres"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.523, 0.188, -1.613 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+script = ExtResource( 10 )
+
+[node name="Area" type="Area" parent="Torres/towerSquare_sampleB6"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Torres/towerSquare_sampleB6/Area"]
+transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0 )
+shape = SubResource( 2 )
+script = ExtResource( 12 )
+
+[node name="towerSquare_sampleB5" type="MeshInstance" parent="Torres"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.556, 0.222, -1.535 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+script = ExtResource( 10 )
+
+[node name="Area" type="Area" parent="Torres/towerSquare_sampleB5"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Torres/towerSquare_sampleB5/Area"]
+transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0 )
+shape = SubResource( 2 )
+script = ExtResource( 12 )
+
+[node name="towerSquare_sampleB4" type="MeshInstance" parent="Torres"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.46, 0.202, 0.681 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+script = ExtResource( 10 )
+
+[node name="Area" type="Area" parent="Torres/towerSquare_sampleB4"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Torres/towerSquare_sampleB4/Area"]
+transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0 )
+shape = SubResource( 2 )
+script = ExtResource( 12 )
+
+[node name="towerSquare_sampleB3" type="MeshInstance" parent="Torres"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.552, 0.2, 5.4 )
+mesh = ExtResource( 16 )
+material/0 = null
+material/1 = null
+material/2 = null
+script = ExtResource( 10 )
+
+[node name="Area" type="Area" parent="Torres/towerSquare_sampleB3"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Torres/towerSquare_sampleB3/Area"]
+transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0 )
+shape = SubResource( 2 )
+script = ExtResource( 12 )
 
 [node name="Mapa" type="Spatial" parent="."]
 
 [node name="MeshInstance" type="MeshInstance" parent="Mapa"]
 
-[node name="StaticBody" type="StaticBody" parent="Mapa"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.163458, 3.58029 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Mapa/StaticBody"]
-transform = Transform( -0.999967, -0.00125132, -0.00797749, -0.00806222, 0.0990791, 0.995047, -0.000454716, 0.995079, -0.099086, 3.51425, 0.847148, 5.29653 )
-shape = SubResource( 1 )
-
-[node name="StaticBody2" type="StaticBody" parent="Mapa"]
-
-[node name="CollisionShape" type="CollisionShape" parent="Mapa/StaticBody2"]
-transform = Transform( 10, 0, 0, 0, 0.075, 0, 0, 0, 10, 0, 0.075, 0 )
-shape = SubResource( 2 )
-
 [node name="Path" type="Path" parent="Mapa"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0839434, -0.389962, 0 )
-curve = SubResource( 3 )
+curve = SubResource( 1 )
 script = ExtResource( 6 )
 
 [node name="CharacterFollower" parent="Mapa/Path" instance=ExtResource( 5 )]
@@ -145,3 +187,17 @@ script = ExtResource( 8 )
 visible = false
 
 [node name="Sprite3D" parent="." instance=ExtResource( 11 )]
+[connection signal="body_entered" from="Torres/towerSquare_sampleB2/Area" to="Torres/towerSquare_sampleB2" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="Torres/towerSquare_sampleB2/Area" to="Torres/towerSquare_sampleB2" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="Torres/towerSquare_sampleB8/Area" to="Torres/towerSquare_sampleB8" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="Torres/towerSquare_sampleB8/Area" to="Torres/towerSquare_sampleB8" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="Torres/towerSquare_sampleB7/Area" to="Torres/towerSquare_sampleB7" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="Torres/towerSquare_sampleB7/Area" to="Torres/towerSquare_sampleB7" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="Torres/towerSquare_sampleB6/Area" to="Torres/towerSquare_sampleB6" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="Torres/towerSquare_sampleB6/Area" to="Torres/towerSquare_sampleB6" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="Torres/towerSquare_sampleB5/Area" to="Torres/towerSquare_sampleB5" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="Torres/towerSquare_sampleB5/Area" to="Torres/towerSquare_sampleB5" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="Torres/towerSquare_sampleB4/Area" to="Torres/towerSquare_sampleB4" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="Torres/towerSquare_sampleB4/Area" to="Torres/towerSquare_sampleB4" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="Torres/towerSquare_sampleB3/Area" to="Torres/towerSquare_sampleB3" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="Torres/towerSquare_sampleB3/Area" to="Torres/towerSquare_sampleB3" method="_on_Area_body_exited"]

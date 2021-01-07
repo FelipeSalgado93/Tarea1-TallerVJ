@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://tower-defense-kit-1/ammo_rocketModern.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Disparo.gd" type="Script" id=2]
+
+[node name="Disparo" type="RigidBody"]
+script = ExtResource( 2 )
+
+[node name="CollisionPolygon" type="CollisionPolygon" parent="."]
+polygon = PoolVector2Array( 10, 10 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0.00257164, -0.000632644, -0.00355061 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+[connection signal="body_entered" from="." to="." method="_on_Disparo_body_entered"]
